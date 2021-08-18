@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/head"
+            android:text="Student Enrollment Form"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textColor="#112233" />
+    </TableRow>
+
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:text="Student ID" />
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etid"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name" />
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etname"
+            android:scrollHorizontally="true"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fee"
+            android:text="Fee Paid" />
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etfee"
+            android:numeric="decimal"/>
+    </TableRow>
+
+    <TableRow>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:text="Cancel" />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="Add Student" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/head2"
+            android:text="List of Enrolled Students"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#112233" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/head3"
+            android:text="Students ID       Name       Fee Paid"
+            android:layout_span="2"
+            android:textSize="15sp"
+            android:textColor="#112233" />
+    </TableRow>
+
+    <TableRow>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorPrimaryDark"
+            android:layout_span="2">
+        </ListView>
+    </TableRow>
+
+</TableLayout>
